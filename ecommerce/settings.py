@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['coffee-ecommerce-production.up.railway.app','https://coffee-ecommerce-production.up.railway.app']
 
-
+CSRF_TRUSTED_ORIGINS = ['coffee-ecommerce-production.up.railway.app','https://coffee-ecommerce-production.up.railway.app','https://*.127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
