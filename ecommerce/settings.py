@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)i1l2*jwwb@qb$!=&_gqzb$!s(e+(g)zkvo!5u(0@k%8r#s1h8
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['coffee-ecommerce-production.up.railway.app']
 
 
 # Application definition
