@@ -1,6 +1,8 @@
 {% extends 'store/main.html' %}
 {% load static %}
 {% block content %}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="box-element">
@@ -37,11 +39,11 @@
 					<div style="flex:1"><p>${{item.product.price|floatformat:2}}</p></div>
 					<div style="flex:1">
 						<p class="quantity">{{item.quantity}}</p>
-						<div class="quantity">
-							<img data-product="{{item.product.id}}" data-action="add" class="chg-quantity update-cart" src="{% static  'images/arrow-up.png' %}">
+							{% comment %} <img data-product="{{item.product.id}}" data-action="add" class="chg-quantity update-cart" src="https://w7.pngwing.com/pngs/711/104/png-transparent-computer-icons-arrow-down-arrow-up-right-left-up-up-arrow-angle-triangle-black-thumbnail.png">
 					
-							<img data-product="{{item.product.id}}" data-action="remove" class="chg-quantity update-cart" src="{% static  'images/arrow-down.png' %}">
-						</div>
+							<img data-product="{{item.product.id}}" data-action="remove" class="chg-quantity update-cart" src="https://e7.pngegg.com/pngimages/486/918/png-clipart-computer-icons-arrow-down-arrow-angle-white.png"> {% endcomment %}
+							<i data-product="{{item.product.id}}" data-action="add"  class="fa fa-caret-up  chg-quantity update-cart" aria-hidden="true" style="font-size:30px"></i>
+							<i data-product="{{item.product.id}}" data-action="remove"  class="fa fa-caret-down chg-quantity update-cart" aria-hidden="true" style="font-size:30px"></i> 
 					</div>
 					<div style="flex:1"><p>${{item.get_total|floatformat:2}}</p></div>
 				</div>
